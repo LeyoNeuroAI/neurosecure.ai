@@ -102,7 +102,7 @@ export function WaitlistForm() {
   }
 
   return (
-      <div className="relative max-h-[80vh] overflow-y-auto px-4 py-2 -mx-4 sm:px-0 sm:mx-0">
+      <div className="relative  overflow-y-auto px-4 py-2 -mx-4 sm:px-0 sm:mx-0">
         {successMessage && (
             <div
                 className="fixed bottom-4 left-4 right-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-md shadow-md"
