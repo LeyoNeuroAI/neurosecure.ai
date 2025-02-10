@@ -53,6 +53,7 @@
     "@types/pg": "latest",
     "@types/react": "latest",
     "@types/sql.js": "latest",
+    "@vercel/analytics": "^1.4.1",
     "@vercel/postgres": "latest",
     "@xata.io/client": "latest",
     "autoprefixer": "^10.4.20",

@@ -1,6 +1,10 @@
 import "./globals.css"
 import { Fraunces, Source_Serif_4 } from "next/font/google"
 import type React from "react"
+import { Analytics } from '@vercel/analytics/next';
+
+
+
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -26,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fraunces.variable} ${sourceSerif.variable} font-serif bg-[#E5DDD3] text-gray-800`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
