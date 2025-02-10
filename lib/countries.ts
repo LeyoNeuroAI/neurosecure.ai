@@ -16,14 +16,18 @@ export const countries = [
   { name: "Japan", code: "JP" },
   { name: "South Korea", code: "KR" },
   { name: "Singapore", code: "SG" },
-  
-,
+  { name: "India", code: "IN" },
+  { name: "Turkey", code: "TR" },
+
+  ,
   { name: "New Zealand", code: "NZ" },
   { name: "Ireland", code: "IE" },
   { name: "Austria", code: "AT" },
   { name: "Italy", code: "IT" },
   { name: "Spain", code: "ES" },
   { name: "Portugal", code: "PT" },
+  { name: "Other", code: "OT" },
+
   // Add more countries as needed, excluding OFAC sanctioned countries
 ]
 
