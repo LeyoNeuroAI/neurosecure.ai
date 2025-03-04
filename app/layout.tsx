@@ -21,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      <CookieConsent />
+      <AnalyticsProvider />
+      </body>
     </html>
   )
 }
@@ -29,3 +32,5 @@ export default function RootLayout({
 
 
 import './globals.css'
+import {CookieConsent} from "@/components/CookieConsent";
+import {AnalyticsProvider} from "@/components/analytics-provider";

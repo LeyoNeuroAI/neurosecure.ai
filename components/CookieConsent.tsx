@@ -1,32 +1,56 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import { X } from "lucide-react"
 
-export default function CookieConsent() {
-    const [isVisible, setIsVisible] = useState(true)
+export function CookieConsent() {
+    const [showConsent, setShowConsent] = useState(false)
 
-    const handleCookiePreference = async (accept: boolean) => {
-        await fetch("/api/set-cookie", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ accept }),
-        })
-        setIsVisible(false)
+    useEffect(() => {
+        // Check if user has already made a choice
+        const cookieConsent = localStorage.getItem("cookie-consent")
+        if (cookieConsent === null) {
+            setShowConsent(true)
+        }
+    }, [])
+
+    const acceptCookies = () => {
+        localStorage.setItem("cookie-consent", "accepted")
+        setShowConsent(false)
+
+        // Reload the page to enable analytics
+        window.location.reload()
     }
 
-    if (!isVisible) return null
+    const declineCookies = () => {
+        localStorage.setItem("cookie-consent", "declined")
+        setShowConsent(false)
+    }
+
+    if (!showConsent) return null
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 bg-gray-100 p-4 flex justify-between items-center">
-            <p>We use cookies to improve your experience. Do you accept?</p>
-            <div className="space-x-2">
-                <Button onClick={() => handleCookiePreference(false)} variant="outline">
-                    Reject
-                </Button>
-                <Button onClick={() => handleCookiePreference(true)}>Accept</Button>
+        <div className="fixed bottom-0 left-0 right-0 bg-background border-t p-4 shadow-lg z-50">
+            <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex-1">
+                    <p className="text-sm">
+                        We use cookies to improve your experience and analyze website traffic. By clicking "Accept", you agree to
+                        our website's cookie use as described in our Privacy Policy.
+                    </p>
+                </div>
+                <div className="flex gap-2">
+                    <Button variant="outline" size="sm" onClick={declineCookies}>
+                        Decline
+                    </Button>
+                    <Button size="sm" onClick={acceptCookies}>
+                        Accept
+                    </Button>
+                    <Button variant="ghost" size="sm" className="p-0 h-8 w-8" onClick={declineCookies}>
+                        <X className="h-4 w-4" />
+                        <span className="sr-only">Close</span>
+                    </Button>
+                </div>
             </div>
         </div>
     )
