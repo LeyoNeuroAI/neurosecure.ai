@@ -20,7 +20,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-xl font-semibold mt-8 mb-4">1. Introduction</h2>
             <p>
-              At NeuroSecure B.V., we take your privacy seriously. This Privacy Policy explains how we collect, use, and
+              At NeuroSecure B.V. we take your privacy seriously. This Privacy Policy explains how we collect, use, and
               protect your personal information when you use our website and services.
             </p>
 
@@ -109,11 +109,7 @@ export default function PrivacyPage() {
         </div>
       </main>
 
-      <footer className="bg-slate-100 py-6 px-4 border-t">
-        <div className="container mx-auto text-center text-sm text-slate-500">
-          &copy; {new Date().getFullYear()} NeuroSecure, B.V.. All rights reserved.
-        </div>
-      </footer>
+
     </div>
   )
 }

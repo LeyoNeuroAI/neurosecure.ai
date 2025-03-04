@@ -87,13 +87,7 @@ export default function AboutPage() {
                 </section>
             </main>
 
-            <footer className="bg-muted py-12 px-4">
-                <div className="container mx-auto text-center">
-                    <p className="text-sm text-muted-foreground">
-                        &copy; {new Date().getFullYear()} NeuroSecure B.V. All rights reserved.
-                    </p>
-                </div>
-            </footer>
+
         </div>
     )
 }

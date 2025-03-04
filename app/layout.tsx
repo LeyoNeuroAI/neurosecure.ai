@@ -3,6 +3,11 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
+import './globals.css'
+import {CookieConsent} from "@/components/CookieConsent";
+import {AnalyticsProvider} from "@/components/analytics-provider";
+import Footer from "@/components/footer";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -24,6 +29,7 @@ export default function RootLayout({
       <body className={inter.className}>{children}
       <CookieConsent />
       <AnalyticsProvider />
+      <Footer />
       </body>
     </html>
   )
@@ -31,6 +37,3 @@ export default function RootLayout({
 
 
 
-import './globals.css'
-import {CookieConsent} from "@/components/CookieConsent";
-import {AnalyticsProvider} from "@/components/analytics-provider";
