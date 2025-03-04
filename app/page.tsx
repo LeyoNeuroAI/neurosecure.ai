@@ -27,7 +27,7 @@ export default function Home() {
             FAQ
           </Link>
           <Link
-            href="https://beta.neurosecure.ai/"
+            href="https://beta.neurosecure.ai/register"
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md transition-colors"
           >
             Sign Up
