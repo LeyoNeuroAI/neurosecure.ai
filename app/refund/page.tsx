@@ -1,6 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import {Shield} from "lucide-react";
 
 
 export default function RefundPolicy() {
@@ -12,31 +13,20 @@ export default function RefundPolicy() {
     }
 
     return (
-        <div className="py-6 md:py-12 lg:py-16">
-            <div className="container px-4 md:px-6">
-                <div className="prose prose-gray max-w-none dark:prose-invert">
-                    <div className="pb-4 space-y-2 border-b border-gray-200 dark:border-gray-800">
-                        <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Refund Policy</h1>
-                        <p className="text-gray-500 dark:text-gray-400">Last updated: February 28, 2025</p>
-                    </div>
+        <div className="min-h-screen flex flex-col">
+            <header className="container mx-auto py-6 px-4 flex justify-between items-center border-b">
+                <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
+                    <Shield className="h-8 w-8 text-blue-500" />
+                    <span>NeuroSecure.ai</span>
+                </Link>
+            </header>
 
-                    <nav className="my-6 print:hidden">
-                        <h2 className="text-lg font-bold mb-2">Table of Contents</h2>
-                        <ul className="flex flex-wrap gap-2">
-                            {["eligibility", "process", "timeframes", "payment-methods", "exceptions", "contact"].map((section) => (
-                                <li key={section}>
-                                    <Button variant="outline" size="sm" onClick={() => scrollToSection(section)} className="text-sm">
-                                        {section
-                                            .split("-")
-                                            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                                            .join(" ")}
-                                    </Button>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
+            <main className="flex-grow container mx-auto py-12 px-4">
+                <div className="max-w-3xl mx-auto">
+                    <h1 className="text-3xl font-bold tracking-tight mb-8">Refund Policy</h1>
 
-                    <div className="mx-auto prose max-w-none">
+                    <div className="prose prose-slate max-w-none">
+                        <p className="text-lg mb-6">Last updated: March 04, 2025</p>
                         <p>
                             At NeuroSecure B.V. we strive to ensure your complete satisfaction with our services. This Refund Policy
                             outlines the conditions under which we provide refunds for our subscription services and one-time
@@ -141,14 +131,15 @@ export default function RefundPolicy() {
                             Email: support@neurosecure.ai
                         </p>
                     </div>
+                </div>
+            </main>
 
 
 
 
 
                 </div>
-            </div>
-        </div>
+
     )
 }
 
