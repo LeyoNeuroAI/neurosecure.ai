@@ -1,12 +1,12 @@
 import Link from "next/link"
-import { Brain } from "lucide-react"
+import { Shield} from "lucide-react"
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="container mx-auto py-6 px-4 flex justify-between items-center border-b">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
-          <Brain className="h-8 w-8 text-blue-500" />
+          <Shield className="h-8 w-8 text-blue-500" />
           <span>NeuroSecure.ai</span>
         </Link>
       </header>
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
 
             <h2 className="text-xl font-semibold mt-8 mb-4">1. Introduction</h2>
             <p>
-              At NeuroSecure.ai, we take your privacy seriously. This Privacy Policy explains how we collect, use, and
+              At NeuroSecure B.V., we take your privacy seriously. This Privacy Policy explains how we collect, use, and
               protect your personal information when you use our website and services.
             </p>
 
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
 
       <footer className="bg-slate-100 py-6 px-4 border-t">
         <div className="container mx-auto text-center text-sm text-slate-500">
-          &copy; {new Date().getFullYear()} NeuroSecure, Inc. All rights reserved.
+          &copy; {new Date().getFullYear()} NeuroSecure, B.V.. All rights reserved.
         </div>
       </footer>
     </div>

@@ -25,9 +25,9 @@ export default function TermsPage() {
             </p>
 
             <h2 className="text-xl font-semibold mt-8 mb-4">2. Definitions</h2>
-            <p>"Service" refers to the NeuroSecure.ai website and AI platform operated by NeuroSecure, Inc.</p>
+            <p>"Service" refers to the NeuroSecure.ai website and AI platform operated by NeuroSecure B.V.</p>
             <p>"User," "You," and "Your" refer to the individual or entity accessing or using the Service.</p>
-            <p>"We," "Us," and "Our" refer to NeuroSecure, Inc.</p>
+            <p>"We," "Us," and "Our" refer to NeuroSecure, B.V.</p>
 
             <h2 className="text-xl font-semibold mt-8 mb-4">3. Account Registration</h2>
             <p>
@@ -45,7 +45,7 @@ export default function TermsPage() {
 
             <h2 className="text-xl font-semibold mt-8 mb-4">5. Intellectual Property</h2>
             <p>
-              The Service and its original content, features, and functionality are owned by NeuroSecure, Inc. and are
+              The Service and its original content, features, and functionality are owned by NeuroSecure, B.V.. and are
               protected by international copyright, trademark, and other intellectual property laws.
             </p>
 
@@ -73,7 +73,7 @@ export default function TermsPage() {
 
             <h2 className="text-xl font-semibold mt-8 mb-4">9. Limitation of Liability</h2>
             <p>
-              In no event shall NeuroSecure, Inc. be liable for any indirect, incidental, special, consequential, or
+              In no event shall NeuroSecure, B.V. be liable for any indirect, incidental, special, consequential, or
               punitive damages resulting from your use of or inability to use the Service.
             </p>
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
             <p>
               If you have any questions about these Terms, please contact us at{" "}
               <a href="mailto:legal@neurosecure.ai" className="text-purple-600 hover:underline">
-                legal@neurosecure.ai
+                support@neurosecure.ai
               </a>
               .
             </p>
@@ -97,7 +97,7 @@ export default function TermsPage() {
 
       <footer className="bg-slate-100 py-6 px-4 border-t">
         <div className="container mx-auto text-center text-sm text-slate-500">
-          &copy; {new Date().getFullYear()} NeuroSecure, Inc. All rights reserved.
+          &copy; {new Date().getFullYear()} NeuroSecure B.V. All rights reserved.
         </div>
       </footer>
     </div>

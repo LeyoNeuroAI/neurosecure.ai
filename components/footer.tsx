@@ -62,6 +62,11 @@ export default function Footer() {
                   Privacy
                 </Link>
               </li>
+              <li>
+                <Link href="/refund" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Refund
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
