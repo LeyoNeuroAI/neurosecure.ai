@@ -67,6 +67,11 @@ export default function Footer() {
                   Refund
                 </Link>
               </li>
+              <li>
+                <Link href="https://beta.neurosecure.ai/research" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Research
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
