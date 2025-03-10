@@ -59,7 +59,7 @@ export default function PricingSection() {
                         <h3 className="text-lg font-semibold mb-2">Pro</h3>
                         <p className="text-muted-foreground mb-4">For growing businesses and teams</p>
                         <div className="flex items-baseline mb-4">
-                            <span className="text-4xl font-bold">$15</span>
+                            <span className="text-4xl font-bold">€50</span>
                             <span className="text-muted-foreground ml-1">/month</span>
                         </div>
                         <Button onClick={() => handlePlanSelect("pro")} className="w-full">
@@ -70,11 +70,11 @@ export default function PricingSection() {
                         <ul className="space-y-3">
                             <li className="flex items-start">
                                 <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                                <span className="text-muted-foreground">3 Free AI Assistant</span>
+                                <span className="text-muted-foreground">2 AI Assistant</span>
                             </li>
                             <li className="flex items-start">
                                 <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                                <span className="text-muted-foreground">3 Free AI Prompt Templates</span>
+                                <span className="text-muted-foreground">2 AI Prompt Templates</span>
                             </li>
                             <li className="flex items-start">
                                 <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -93,35 +93,35 @@ export default function PricingSection() {
                 </div>
 
                 {/* Enterprise Plan */}
-                <div className="bg-card rounded-xl shadow-sm border overflow-hidden">
-                    <div className="p-6">
-                        <h3 className="text-lg font-semibold mb-2">Enterprise</h3>
-                        <p className="text-muted-foreground mb-4">For large organizations and teams</p>
-                        <Button onClick={() => handlePlanSelect("enterprise")} className="w-full">
-                            Contact sales
-                        </Button>
-                    </div>
-                    <div className="border-t border-slate-200 p-6">
-                        <ul className="space-y-3">
-                            <li className="flex items-start">
-                                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                                <span className="text-muted-foreground">Unlimited AI Assistants</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                                <span className="text-muted-foreground">Unlimited AI Prompt templates</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                                <span className="text-muted-foreground">Custom AI Prompt templates</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                                <span className="text-muted-foreground">Email and Phone support</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                {/*<div className="bg-card rounded-xl shadow-sm border overflow-hidden">*/}
+                {/*    <div className="p-6">*/}
+                {/*        <h3 className="text-lg font-semibold mb-2">Enterprise</h3>*/}
+                {/*        <p className="text-muted-foreground mb-4">For large organizations and teams</p>*/}
+                {/*        <Button onClick={() => handlePlanSelect("enterprise")} className="w-full">*/}
+                {/*            Contact sales*/}
+                {/*        </Button>*/}
+                {/*    </div>*/}
+                {/*    <div className="border-t border-slate-200 p-6">*/}
+                {/*        <ul className="space-y-3">*/}
+                {/*            <li className="flex items-start">*/}
+                {/*                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />*/}
+                {/*                <span className="text-muted-foreground">Unlimited AI Assistants</span>*/}
+                {/*            </li>*/}
+                {/*            <li className="flex items-start">*/}
+                {/*                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />*/}
+                {/*                <span className="text-muted-foreground">Unlimited AI Prompt templates</span>*/}
+                {/*            </li>*/}
+                {/*            <li className="flex items-start">*/}
+                {/*                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />*/}
+                {/*                <span className="text-muted-foreground">Custom AI Prompt templates</span>*/}
+                {/*            </li>*/}
+                {/*            <li className="flex items-start">*/}
+                {/*                <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />*/}
+                {/*                <span className="text-muted-foreground">Email and Phone support</span>*/}
+                {/*            </li>*/}
+                {/*        </ul>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </div>
     )
